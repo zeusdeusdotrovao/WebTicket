@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Tickets</title>
+
+    <!-- Importa o CSS externo -->
+    <link rel="stylesheet" href="tickets.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Atendimento - Tickets</h1>
+    </header>
+
+    <main>
+
+        <!-- Botões para emissão de senhas -->
+        <section class="emitir">
+            <h2>Emitir Senha</h2>
+
+            <button onclick="emitirSenha('SP')">Senha Prioritária (SP)</button>
+            <button onclick="emitirSenha('SE')">Retirada de Exames (SE)</button>
+            <button onclick="emitirSenha('SG')">Senha Geral (SG)</button>
+        </section>
+
+        <!-- Exibição das últimas senhas chamadas -->
+        <section class="painel">
+            <h2>Últimas Senhas Chamadas</h2>
+            <ul id="listaChamadas"></ul>
+        </section>
+
+        <!-- Botão de chamar próximo -->
+        <section class="chamada">
+            <h2>Atendimento</h2>
+            <button onclick="chamarProximo()">Chamar Próximo</button>
+        </section>
+
+    </main>
+
+    <!-- Importa o JS externo -->
+    <script src="tickets.js"></script>
+
+</body>
+</html>
